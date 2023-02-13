@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+	th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportyShoes-add</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+    <section>
+        <header class="heading" id="heading">
+            <h1 id="top"> SportyShoes</h1>
+        </header>
+
+        <div class="options" >
+            <h2> <b><u>Enter details to add/remove products</u></b></h2>
+            <form action="#" th:action="@{/add}" th:object="${product}" method="post">
+            <label for="prodId" class="opt">Product Id  </label>
+                <input type="text" name="id" id="o1" placeholder="Product Id" th:field="*{prodId}"> 
+                <span th:if="${#fields.hasErrors('prodId')}" th:errors="*{prodId}"></span><br><br>
+          
+            <label for="prodName" class="opt">Name of Product </label>
+                <input type="text" name="name" id="o1" placeholder="Enter product name" th:field="*{prodName}">
+             <span th:if="${#fields.hasErrors('prodName')}" th:errors="*{prodName}"></span><br><br>
+            <label for="prodPrice" class="opt">Price of product</label> 
+                <input type="text" name="sp" id="o2" placeholder="Enter selling Price" th:field="*{prodPrice}"> 
+               <span th:if="${#fields.hasErrors('prodPrice')}" th:errors="*{prodPrice}"></span><br><br> 
+                
+           <input class="next" id="add" name="action" type="submit" value="add" /> 
+            <button class="next" id="reports" name="action" type="button" value="logout"><a href="/admin.html">Logout</a></button>     
+            </form>
+            </div>
+    </section>
+
+    
+
+   
+
+
+    
+
+</div>
+</body>
+</html>

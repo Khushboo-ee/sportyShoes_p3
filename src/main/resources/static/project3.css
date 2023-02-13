@@ -1,0 +1,131 @@
+@font-face {
+    font-family: title;
+    src: url(/aloevera.ttf);
+    
+}
+html{
+    background-image: url("/images/bgimg1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-resolution: 0.45;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    font-family: title;
+    background-image: "bg2.jpg";
+    font-size: 30px;
+    color: rgb(226, 43, 122);
+}
+.taskbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: space-between;
+    font-family:cursive;
+   background-color: rgb(1, 158, 119);
+    font-size: 21px;
+}
+#error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-style: oblique;
+}
+#home{
+    padding: 5px 8px;
+    
+}
+#about{
+    padding: 5px 8px;
+}
+#shopping{
+    padding: 5px 8px;
+}
+#admin{
+    padding: 5px 8px;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    color: rgb(160, 21, 21);
+}
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(43, 41, 41);
+}
+#city{
+    font-size: 20px;
+    color: black;
+}
+.option{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0px;
+    
+}
+.options{
+    text-align: center;
+}
+img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+   
+}
+/* img:hover{
+     width: 300px;
+     height: 200px;
+     border: none;
+} */
+.bottom{
+    font-family: title;
+    font-size: 21px;
+    
+}
+.dropdown{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    background-position: center;
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:gold;
+    
+}
+.links{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    float: inline-end;
+}
+.selections{
+    text-align: center;
+    padding: 5px;
+    margin: 5px 60px;
+}
+.footer{
+    color: rgb(99, 18, 174);
+    text-align: right;
+    font-size: x-small;
+}
+
+.space{
+    border: 0px dotted white;
+    height: 100%;
+    width: 100%;
+}
+ 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SportyShoes_AdminLogin</title>
+<link rel="stylesheet" href="project3.css">
+</head>
+<body>
+	<section>
+		<header class="heading" id="heading">
+			<h1 id="top">SportyShoes</h1>
+		</header>
+
+		<div class="options">
+			<h2>
+				<b><u>Admin Login</u></b>
+			</h2>
+			<form th:action="@{/process}" method="post"
+				th:object="${loginData}">
+				
+				<label class="opt" for="name">Name <input type="text"
+					name="name" id="o1" placeholder="Enter full name"
+					th:value="${loginData.name}"> <br> <br>
+				</label> 
+				
+				<label class="opt" for="uname">Username <input type="text"
+					name="uname" id="o1" placeholder="Enter username"
+					th:value="${loginData.uname}"> <br> <br>
+				</label> 
+				
+				<label class="opt" for="pwd">Password <input
+					type="password" name="pwd" id="o2" placeholder="Enter password"
+					th:value="${loginData.pwd}"> <br> <br>
+				</label>
+
+
+				<button class="end" type="submit">Login</button>
+		</div>
+		<br>
+		</form>
+	</section>
+
+</body>
+</html>
