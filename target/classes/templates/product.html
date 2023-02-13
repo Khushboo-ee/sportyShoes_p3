@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+	th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportyShoes_AdminLogin</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+    <section>
+        <header class="heading" id="heading">
+            <h1 id="top"> SportyShoes</h1>
+        </header>
+
+        <div class="options" >
+            <h2> <b><u>Choose options to alter the database</u></b></h2>
+           
+            <button class="next" id="product" type="button"> <a th:href="@{/alterProduct}">Remove/Add Products</a> </button> 
+            <button class="next" id="category" type="button"> <a th:href="@{/alterCategory}">Remove/Add Categories</a> </button> 
+            <button class="next" id="whole" type="button"> <a th:href="@{/alter}">Alter category product list </a> </button>
+            <button class="next" id="reports" type="button"> <a th:href="@{/admin}">Logout</a></button>     
+        </div> <br>
+
+    </section>
+ 
+</body>
+</html>

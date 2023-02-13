@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project3.css">
+    
+</head>
+<body>
+    <div class="taskbar" id="bar">
+        <div class="taskbar" id="home"> <a href="/home.html"><b>Home</b> </a></div> <br>
+        <div class="taskbar" id="about"> <a href="/about.html"><b>About Us</b> </a></div> <br>
+        <div class="taskbar" id="shopping"> <a href="/shopping.html"><b>Shopping</b> </a></div><br>
+        <div class="taskbar" id="admin"> <a href="/admin"><b>Admin</b> </a></div><br>
+        </div><br>
+
+    <div class="space" th:replace="${content}"></div>
+
+    <footer class="footer"><b>Developer: </b> Khushboo Sharma<br>
+        <b>Program: </b> FSD JG Nov 2022 Cohort 3
+        </footer>
+</body>
+</html>

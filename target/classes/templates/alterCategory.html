@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+	th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportyShoes</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+    <section>
+        <header class="heading" id="heading">
+            <h1 id="top"> SportyShoes</h1>
+        </header>
+
+        <div class="options" >
+            <h2> <b><u>Enter details to add/remove categories</u></b></h2>
+            <label class="opt">Category Id
+                <input type="text" name="id" id="o1" placeholder="Category Id"> <br><br>
+            </label>
+            <label class="opt">Name of category
+                <input type="text" name="name" id="o1" placeholder="Enter category name"> <br><br>
+            </label>
+            <button class="next" id="add" type="submit"> Add </button> 
+            <button class="next" id="remove" type="submit"> Remove </button> 
+            <button class="next" id="reports" type="button"> <a href="/admin.html">Logout</a></button>     
+            </div>
+    </section>
+
+
+</div>
+</body>
+</html>
